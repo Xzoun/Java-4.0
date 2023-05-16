@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Prueba</title>
+        
+    <h1>Hola Mundo!</h1>
+</head>
+<body>
+    <button Style="background-color: red" onclick=' saludar("Leo", "Benitez")'>saludar</button>
+<script>
+    function saludar(nombre,apellido){
+        var horayfechaActual = new Date();
+        var horaActual = horayfechaActual.getHours();
+        var minActual = horayfechaActual.getMinutes();
+        //alert("Hola "+ nombre + " " + apellido);  
+       
+        var primermensaje;
+    if(horaActual > 0 && horaActual<7){
+        primermensaje = "Hola, buenas noches";
+    }
+    if(horaActual>=7 && horaActual<13){
+        primermensaje = "Hola, buen día"
+    }
+    if(horaActual>=13 && horaActual<19){
+        primermensaje = "Hola, buenas tardes"
+    }
+   document.getElementById("Saludo").innerText = primermensaje +" "+ nombre + " " + apellido + " son las " + horaActual + ":" + minActual;
+}   
+</script>
+<br>
+</br>
+<div id="Saludo"> 
+    
+</div>
+</body>
+</html>
