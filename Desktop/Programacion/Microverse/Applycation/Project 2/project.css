@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microverse-survey-form</title>
+</head>
+<body>
+    <h1 id="title">Microverse-survey-form</h1>
+    <p id="description">
+        This is a demo part of a survey form and its in developing state.
+    </p>
+    <form id="survey-form" action="">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+
+              <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+            <label id="number-label" for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="form-control"
+              placeholder="Enter your Age"
+              min ="15"
+              max="50"
+
+              required
+            />
+            
+          </div>
+          <p>Select your current jobrole:</p>
+          <select name="" id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+
+            <div class="form-group">
+                <p>Rate our freecodecamp program</p>
+                <label id="radio-label" for="name">Name</label>
+                <input
+              name="user-recommend"
+              value="Its fun"
+              type="radio"
+              class="input-radio"
+              checked
+            />Its fun
+
+            <input
+              name="user-recommend"
+              value="Its fun"
+              type="radio"
+              class="input-radio"
+              checked
+            />Hard
+
+            <input

@@ -1,0 +1,28 @@
+body{
+font-family: sans-serif;
+background-color: #F75E99;
+}
+
+#signUpForm{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+}
+
+#genderChoose{
+    display: flex;
+    flex-direction:row;
+}
+
+form{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 12px;
+    width: 40%;
+}
+
+form label{
+    cursor: pointer;
+}
+
+

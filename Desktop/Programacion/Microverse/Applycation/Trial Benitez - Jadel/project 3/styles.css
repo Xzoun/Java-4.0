@@ -1,0 +1,10 @@
+#navbar{
+    display: flex;
+    justify-content: right;
+    gap: 2%;
+    padding: 1% 10%;
+}
+
+#welcome-section h1{
+text-align: center;
+}
