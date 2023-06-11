@@ -1,9 +1,11 @@
-package Servicios;
+package Entidad;
 
 import Entidad.Mascota;
+import Servicios.ServicioMascota;
+import Servicios.ServicioPersonas;
 import java.util.Scanner;
 
-public class ServicioPetShop {
+public class PetShop {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     ServicioMascota mascotas = new ServicioMascota();

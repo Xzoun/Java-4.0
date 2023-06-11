@@ -11,7 +11,7 @@ public class Mascota {
 
     @Override
     public String toString() {
-        return "{nombre=" + nombre + ", tamano" + tamano + ", id=" + id + ", edad=" + edad + '}';
+        return "{" + nombre + ", tamano " +tamano + ", id " + id + ", edad " + edad + '}';
     }
 
 

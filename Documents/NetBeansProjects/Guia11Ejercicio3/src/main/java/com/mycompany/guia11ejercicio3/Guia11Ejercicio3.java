@@ -7,7 +7,7 @@ compuesta por un conjunto de cartas, 40 exactamente.
 Las operaciones que podrá realizar la baraja son:
 • barajar(): cambia de posición todas las cartas aleatoriamente.
 • siguienteCarta(): devuelve la siguiente carta que está en la baraja,
-cuando no haya más o egado al final, se indica al usuario que no hay más
+cuando no haya más o llegado al final, se indica al usuario que no hay más
 cartas.
 • cartasDisponibles(): indica el número de cartas que aún se puede
 repartir.
@@ -23,12 +23,13 @@ primera carta.
 
 package com.mycompany.guia11ejercicio3;
 
-import Servicios.BarajaServicios;
+import Servicios.MenuServicios;
 
 public class Guia11Ejercicio3 {
 
     public static void main(String[] args) {
-    BarajaServicios barajas = new BarajaServicios();
-    barajas.nuevaBaraja();
+    MenuServicios menu = new MenuServicios();
+    menu.reiniciar();
+    menu.menu();
     }
 }

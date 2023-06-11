@@ -10,7 +10,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "nombre=" + nombre + ", apellido=" + apellido + ", mascota=" + mascota + ", documento=" + documento;
+        return nombre + ", " + apellido + ", " + documento +", mascota" + mascota;
     }
 
     public Persona() {

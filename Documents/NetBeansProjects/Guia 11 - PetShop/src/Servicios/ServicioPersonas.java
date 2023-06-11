@@ -56,7 +56,7 @@ public class ServicioPersonas {
                 adoptante.setMascota(eleccion);
 
                 PersonasHashMap.put(dni, adoptante);
-                System.out.println("Felicidades, has adoptado una mascota.");
+                System.out.println("Felicidades, "+ adoptante.getNombre() +" has adoptado una mascota.");
                 System.out.println(adoptante.toString());
             } else {
                 System.out.println("No se encontró ninguna mascota con el ID especificado.");
