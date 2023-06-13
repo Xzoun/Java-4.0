@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MenuServicios {
 
-    Scanner leer = new Scanner(System.in);
+    Scanner leer = new Scanner(System.in).useDelimiter("\n");
     ArrayList<Espectador> espectadores;
     CineServicios cineServ = new CineServicios();
 
@@ -27,7 +27,7 @@ public class MenuServicios {
         switch (respuesta) {
 
             case 1:
-                int salaNum = cineServ.crearSalaPersonalizada();
+                int salaNum = cineServ.crearSala();
                 System.out.println("--------------------------------------");
                 System.out.println("Sala número " + salaNum);
                 System.out.println("--------------------------------------");
@@ -40,7 +40,7 @@ public class MenuServicios {
                 cineServ.mostrarSala(sala);
                 menu();
                 break;
-            case 3:
+            case 3:                
                 cineServ.comprarEntrada();
                 menu();
                 break;
@@ -66,7 +66,7 @@ public class MenuServicios {
 
     public int nuevaSimulacion(int esp) {
         espectadores = new ArrayList(esp);
-        Integer salaNum = cineServ.crearSala();
+        Integer salaNum = cineServ.crearSalaSimulacion();
         int numero = 0;
         for (int i = 0; i < esp; i++) {
             numero++;
