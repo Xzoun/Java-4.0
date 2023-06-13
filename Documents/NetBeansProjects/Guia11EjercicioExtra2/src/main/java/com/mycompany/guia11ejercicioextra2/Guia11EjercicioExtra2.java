@@ -30,9 +30,13 @@ numero de cada asiento o solo las X y espacios vacíos.
 */
 package com.mycompany.guia11ejercicioextra2;
 
+
+import Servicios.MenuServicios;
+
 public class Guia11EjercicioExtra2 {
 
     public static void main(String[] args) {
-       
+       MenuServicios nueva = new MenuServicios();
+       nueva.menu();
     }
 }

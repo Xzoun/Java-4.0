@@ -1,9 +1,19 @@
 package Entidad;
 
 public class Cine {
+
     private String peliculaRep;
-    private Integer precio;
-    private  Object[][] sala;
+    private Integer precio = 1200;
+    private Object[][] sala = new Object[6][8];
+
+    public Cine(String peliculaRep, Integer precio, Object[][] sala) {
+        this.peliculaRep = peliculaRep;
+        this.precio = precio;
+        this.sala = sala;
+    }
+
+    public Cine() {
+    }
 
     public String getPeliculaRep() {
         return peliculaRep;
@@ -29,9 +39,4 @@ public class Cine {
         this.sala = sala;
     }
 
-    public Cine(String peliculaRep, Integer precio, Object[][] sala) {
-        this.peliculaRep = peliculaRep;
-        this.precio = precio;
-        this.sala = sala;
-    }
 }

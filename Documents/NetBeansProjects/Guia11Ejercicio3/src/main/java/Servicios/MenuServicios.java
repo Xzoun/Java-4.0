@@ -23,7 +23,7 @@ public class MenuServicios {
         System.out.println("-- 3 -- Ver cartas Disponibles.");
         System.out.println("-- 4 -- Pedir Cartas.");
         System.out.println("-- 5 -- Ver cartas jugadas.");
-        System.out.println("-- 7 -- Salir");
+        System.out.println("-- 6 -- Salir");
         System.out.println("--------------------------------------");
         System.out.println("Elija una opción:");
         int respuesta = leer.nextInt();
@@ -51,6 +51,8 @@ public class MenuServicios {
             case 5:
                 barajaServ.verCartasJugadas();
                 menu();
+                break;
+            case 6:
                 break;
             default:
                 System.out.println("Ingrese una opción válida");
