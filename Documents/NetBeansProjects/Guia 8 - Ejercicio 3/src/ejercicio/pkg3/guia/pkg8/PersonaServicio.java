@@ -32,7 +32,7 @@ public class PersonaServicio {
     Scanner leer = new Scanner(System.in);
     Persona nuevoRegistro = new Persona();
 
-    public void crearPersona() {
+    public Persona crearPersona() {
 
         System.out.println("Ingrese el nombre");
         nuevoRegistro.setNombre(leer.next());
@@ -52,9 +52,10 @@ public class PersonaServicio {
         nuevoRegistro.setPeso(leer.nextDouble());
         System.out.println("Ingrese la altura (mts)");
         nuevoRegistro.setAltura(leer.nextDouble());
+        return nuevoRegistro;
     }
 
-    public boolean esMayorDeEdad() {
+    public boolean esMayorDeEdad(Persona nuevoRegistro) {
         return nuevoRegistro.getEdad() >= 18;
     }
 

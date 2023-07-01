@@ -30,21 +30,24 @@ public class Ejercicio3Guia8 {
 
     public static void main(String[] args) {
 
-        PersonaServicio registroDiaUno[] = new PersonaServicio[2];
+        Persona registroDiaUno[] = new Persona[2];
         boolean verificacionEdad[] = new boolean[2];
         int registroresultados[] = new int[2];
-        
+
         PersonaServicio individuo = new PersonaServicio();
 
-        for (int i = 0; i < 2; i++) {
-            PersonaServicio ps = new PersonaServicio();
-            ps.crearPersona();
-            registroDiaUno[i] = ps;
-            boolean edades = ps.esMayorDeEdad();
-            verificacionEdad[i] = edades;
-            int resultados = ps.calcularIMC();
-            registroresultados[i] = resultados;
-        }
+            for (int i = 0; i < 2; i++) {
+                PersonaServicio ps = new PersonaServicio();
+                Persona nuevoRegistro = ps.crearPersona();
+                boolean edades = ps.esMayorDeEdad(nuevoRegistro);
+                verificacionEdad[i] = edades;
+                int resultados = ps.calcularIMC();
+                registroresultados[i] = resultados;
+                registroDiaUno[i] = nuevoRegistro;
+                System.out.println(registroDiaUno[i]);
+            }
+     
+
         double mayores = individuo.PorcentajeMayoresdeEdad(verificacionEdad);
         System.out.println("El " + mayores + "% es mayor de edad.");
         individuo.PorcentajeIMC(registroresultados);
